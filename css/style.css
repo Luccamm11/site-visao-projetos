@@ -12,6 +12,10 @@
     --secondary: #e63946; /* Alert Red */
     --secondary-hover: #d62828;
     
+    /* Logo Colors */
+    --logo-primary: #00044d;
+    --logo-secondary: #ff0000;
+    
     /* Layout */
     --container-width: 1200px;
     --nav-height: 80px;
@@ -35,6 +39,10 @@
     --primary-hover: #7dd3fc;
     --secondary: #f87171;
     --secondary-hover: #fca5a5;
+    
+    /* Logo Colors */
+    --logo-primary: #ffffff;
+    --logo-secondary: #ff4d4d;
     
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
     --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.5);

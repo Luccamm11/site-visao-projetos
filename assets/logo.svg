@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%" height="100%">
+    <style>
+        .logo-primary { fill: var(--logo-primary, #00044d); transition: fill 0.3s ease; }
+        .logo-secondary { fill: var(--logo-secondary, #ff0000); transition: fill 0.3s ease; }
+        .logo-line { stroke: var(--logo-secondary, #ff0000); transition: stroke 0.3s ease; }
+        .logo-text { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 800; }
+        .logo-subtext { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 700; letter-spacing: 2px; }
+    </style>
+    
+    <!-- Emblem (V-Shield / Flame) -->
+    <g transform="translate(10, 0)">
+        <!-- Red Flame (Left) -->
+        <path class="logo-secondary" d="M 120,10 C 130,40 135,70 135,100 C 135,160 100,220 50,280 C 40,265 30,240 25,220 C 18,200 15,175 25,140 C 35,105 50,85 60,75 C 45,85 30,100 20,120 C 10,140 10,170 20,200 C 30,230 45,260 65,280 C 85,295 105,305 125,310 C 115,285 100,245 95,210 C 90,170 100,130 115,85 C 122,60 128,35 120,10 Z" />
+        
+        <!-- Blue Shield (Right) -->
+        <path class="logo-primary" d="M 120,10 C 125,35 130,60 138,80 C 145,100 158,115 168,125 C 188,145 200,165 200,190 C 200,225 185,255 165,280 C 145,300 135,305 125,310 C 138,300 155,280 168,260 C 180,240 188,215 188,190 C 188,165 178,145 160,125 C 148,110 138,90 130,70 C 125,50 122,30 120,10 Z" />
+    </g>
+
+    <!-- Main Text "ISÃO" -->
+    <!-- Note: The emblem acts as the 'V', so we render "ISÃO" -->
+    <text x="230" y="270" class="logo-text logo-primary" font-size="190" letter-spacing="5">ISÃO</text>
+    
+    <!-- Accent Line over 'A' -->
+    <rect x="560" y="55" width="120" height="25" class="logo-primary" />
+
+    <!-- Horizontal Divider Line -->
+    <line x1="10" y1="322" x2="990" y2="322" class="logo-line" stroke-width="8" />
+
+    <!-- Subtext "PROJETOS ESTRATÉGICOS" -->
+    <text x="510" y="380" class="logo-subtext logo-primary" font-size="36" text-anchor="middle">PROJETOS ESTRATÉGICOS</text>
+</svg>
