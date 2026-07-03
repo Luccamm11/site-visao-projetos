@@ -49,7 +49,23 @@
     --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5);
 }
 
-/* Reset & Base */
+/* ===========================
+   SVG Logo Theme Adaptation
+   Using !important to guarantee override of SVG internal styles
+   =========================== */
+
+/* Light mode - original logo colors */
+svg .fil1, svg .fil3 { fill: #010066 !important; }
+svg .fil0             { fill: #F7F7F7 !important; }
+svg .fil2             { fill: #F20809 !important; }
+
+/* Dark mode - inverted for readability on dark backgrounds */
+[data-theme="dark"] svg .fil1,
+[data-theme="dark"] svg .fil3 { fill: #ffffff !important; }
+[data-theme="dark"] svg .fil0 { fill: transparent !important; }
+[data-theme="dark"] svg .fil2 { fill: #F20809 !important; }
+
+
 * {
     margin: 0;
     padding: 0;
