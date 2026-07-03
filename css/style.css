@@ -13,8 +13,8 @@
     --secondary-hover: #d62828;
     
     /* Logo Colors */
-    --logo-primary: #00044d;
-    --logo-secondary: #ff0000;
+    --logo-primary: #010066;
+    --logo-bg: #F7F7F7;
     
     /* Layout */
     --container-width: 1200px;
@@ -42,7 +42,7 @@
     
     /* Logo Colors */
     --logo-primary: #ffffff;
-    --logo-secondary: #ff4d4d;
+    --logo-bg: transparent;
     
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
     --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.5);
@@ -166,7 +166,9 @@ img {
 
 .logo-img {
     height: 50px;
+    width: auto;
     object-fit: contain;
+    display: block;
 }
 
 .main-nav .nav-list {
@@ -634,14 +636,12 @@ img {
 
 .footer-logo {
     height: 60px;
-    filter: grayscale(100%);
-    opacity: 0.8;
+    width: auto;
     transition: var(--transition);
 }
 
 .footer-logo:hover {
-    filter: grayscale(0%);
-    opacity: 1;
+    opacity: 0.85;
 }
 
 .footer-contact h3 {

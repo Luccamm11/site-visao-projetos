@@ -30,10 +30,10 @@ viewBox="0 0 21000 29700"
   <style type="text/css">
    <![CDATA[
     @font-face { font-family:"Arial";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-    .fil1 {fill:var(--logo-primary, #010066)}
-    .fil3 {fill:var(--logo-primary, #010066)}
+    .fil1 {fill:#010066}
+    .fil3 {fill:#010066}
     .fil2 {fill:#F20809}
-    .fil0 {fill:var(--logo-bg, #F7F7F7)}
+    .fil0 {fill:#F7F7F7}
     .fnt0 {font-weight:bold;font-size:846.67px;font-family:'Arial'}
    ]]>
   </style>

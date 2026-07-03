@@ -1,4 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // === Inline SVG Logos (needed for CSS variables to work inside SVG) ===
+    async function inlineSVGs() {
+        const svgImgs = document.querySelectorAll('img[src$=".svg"]');
+        for (const img of svgImgs) {
+            try {
+                const response = await fetch(img.src);
+                const text = await response.text();
+                const parser = new DOMParser();
+                const svgDoc = parser.parseFromString(text, 'image/svg+xml');
+                const svgEl = svgDoc.querySelector('svg');
+                if (svgEl) {
+                    // Transfer classes and styles from img to svg
+                    if (img.className) svgEl.setAttribute('class', img.className);
+                    if (img.style.cssText) svgEl.setAttribute('style', img.style.cssText);
+                    svgEl.setAttribute('aria-label', img.alt || '');
+                    svgEl.setAttribute('role', 'img');
+                    // Remove fixed width/height so CSS controls sizing
+                    svgEl.removeAttribute('width');
+                    svgEl.removeAttribute('height');
+                    img.parentNode.replaceChild(svgEl, img);
+                }
+            } catch (e) {
+                console.warn('Could not inline SVG:', img.src, e);
+            }
+        }
+    }
+    inlineSVGs();
+
     // === Theme Toggle (Light/Dark Mode) ===
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
