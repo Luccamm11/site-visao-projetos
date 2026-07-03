@@ -18,7 +18,7 @@
     
     /* Layout */
     --container-width: 1200px;
-    --nav-height: 100px;
+    --nav-height: 120px;
     
     /* Effects */
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
@@ -165,7 +165,7 @@ img {
 }
 
 .logo-img {
-    height: 80px;
+    height: 110px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -635,7 +635,7 @@ img {
 }
 
 .footer-logo {
-    height: 100px;
+    height: 200px;
     width: auto;
     transition: var(--transition);
 }
