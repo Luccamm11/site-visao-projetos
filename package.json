@@ -1,0 +1,21 @@
+{
+  "name": "site-visao-projetos",
+  "version": "1.0.0",
+  "description": "Visão Projetos Estratégicos - Engenharia Contra Incêndio e Pânico",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static site'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "engenharia",
+    "incendio",
+    "projetos"
+  ],
+  "author": "Visão Projetos Estratégicos",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.14"
+  }
+}
