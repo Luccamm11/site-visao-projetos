@@ -849,6 +849,16 @@ img {
     margin-top: auto;
 }
 
+.cert-card img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: calc(var(--radius) - 8px);
+    display: block;
+    margin: 0 auto;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
 
